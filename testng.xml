@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.qa.utility.Reporting" />
+	</listeners>
+	<test name="Test">
+		<parameter name="Browser" value="chrome" />
+		<parameter name="Url" value="https://www.instagram.com/" />
+		<classes>
+
+			<class name="com.qa.testscript.TC_Instagram_01" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
